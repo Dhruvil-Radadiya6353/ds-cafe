@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Ensure text is centered with the logo */
+  }
+  
+  .logo {
+    width: 180px; /* Adjust the size of your logo */
+    height: auto;
+    display: block;
+  }
+  
+  .logo-text {
+    margin-top: 8px; /* Slightly increase the space between the logo and text */
+    font-size: 16px; /* Increase the font size for better readability */
+    font-weight: 600; /* Make the text bold for better prominence */
+    color: #333; /* Adjust text color */
+    letter-spacing: 0.5px; /* Add slight letter-spacing for a more polished look */
+  }
+  
+  .profile {
+    width: 40px; /* Adjust profile size */
+    height: 40px; /* Adjust profile size */
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .logout-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .logout-btn:hover {
+    background: #bb2d3b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.4);
+  }
+  
+  .logout-btn:active {
+    transform: translateY(0);
+  }

@@ -1,0 +1,127 @@
+.contact-submissions {
+    padding: 2rem;
+    width: min(90vw, 1000px);
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f7f9fc);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Adjust width dynamically based on message count */
+@media (min-width: 600px) {
+    .contact-submissions {
+        width: min(95vw, calc(300px + 100px * var(--msg-count, 3)));
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Filter Section */
+.filter-section {
+    margin-bottom: 1.5rem;
+    padding: 0.8rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+}
+
+.filter-section select {
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #fff;
+    font-weight: 500;
+}
+
+.filter-section select:hover {
+    border-color: #3498db;
+}
+
+/* Submissions Grid */
+.submissions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Submission Card */
+.submission-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.6rem;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #3498db;
+    position: relative;
+}
+
+.submission-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* Submission Header */
+.submission-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.submission-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Submission Body */
+.submission-body p {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.submission-body strong {
+    color: #2980b9;
+}
+
+/* Reservation Details */
+.reservation-details {
+    margin-top: 0.8rem;
+    padding: 0.8rem;
+    background: #f4f8fc;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.reservation-details p {
+    margin: 0.3rem 0;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
